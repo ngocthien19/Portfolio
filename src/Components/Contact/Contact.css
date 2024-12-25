@@ -1,0 +1,100 @@
+.contact-form {
+    margin-top: 100px;
+    padding: 0.5rem 8.5rem;
+    display: flex;
+}
+
+.c-left {
+    margin-right: 200px;    
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+} 
+
+.desc {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.c-right > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.input {
+    width: 500px;
+    height: 50px;
+    padding: 5px 10px;
+    border: 3px solid var(--orange);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.textarea {
+    width: 500px;
+    height: 100px;
+    padding: 5px 10px;
+    border: 3px solid var(--orange);
+    border-radius: 20px;
+    margin: 20px 0 50px;
+}
+
+.blur-blue {
+    position: absolute;
+    bottom: -20rem;
+    left: -20rem;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background-color: #9ee0ff;
+    z-index: -9;
+    filter: blur(72px);
+}
+
+.blur-pur {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background-color: #edd0ff;
+    z-index: -9;
+    filter: blur(72px);
+}
+
+.btn-action {
+    width: 120px;
+}
+
+.done {
+    margin-top: 10px;
+    color: rgb(5, 152, 5);
+}
+
+@media screen and (max-width: 480px) { 
+
+    .contact-form {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+
+    .title, .desc {
+        font-size: 2.5rem;
+    }
+
+    .input, .textarea {
+        width: 300px;
+    }
+
+    .c-left {
+        margin-bottom: 60px;    
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,95 @@
+.services {
+    margin-top: 200px;
+    display: flex;
+    padding: 0.5rem 6.5rem;
+}
+
+.awesome {
+    position: relative;
+    flex: 1;
+}
+
+.services-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.services-strong {
+    font-size: 3.1rem;
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.services-desc {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: var(--gray);
+    margin: 30px 0 90px;
+}
+
+.services-btn {
+    width: 180px;
+}
+
+.blur-blue {
+    position: absolute;
+    bottom: -60%;
+    left: -40%;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background-color: #9ee0ff;
+    z-index: -9;
+    filter: blur(72px);
+}
+
+.cards {
+    flex: 1;
+    position: relative;
+}
+
+.cards>*{
+    position: absolute;
+}
+
+.blur-purple {
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background-color: #edd0ff;
+    top: 50%;
+    left: 30%;
+    z-index: -9;
+    filter: blur(72px);
+}
+
+@media screen and (max-width: 480px) {
+    .services {
+        padding: 0 20px;
+        margin-top: 28rem;
+    }
+
+    .services-title {
+        font-size: 1.8rem;
+    }
+
+    .services-desc {
+        width: 17.1rem;
+    }
+
+    .cards {
+        left: -17rem;
+        margin-top: 22rem;
+    }
+
+    .cards > * {
+        position: static;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blur-purple, .blur-blue {
+        display: none;
+    }
+}   

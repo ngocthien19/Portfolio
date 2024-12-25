@@ -1,0 +1,121 @@
+.t-wrapper {
+    padding: 0.5rem 6.5rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+.t-heading {
+    align-self: start;
+}
+
+.t-heading>* {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.t-heading span:nth-of-type(2) {
+    color: var(--orange);
+    margin: 0 10px;
+}
+
+.t-blur1 {
+    position: absolute;
+    bottom: 14rem;
+    left: 45rem;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background-color: #9ee0ff;
+    z-index: -9;
+    filter: blur(72px);
+}
+
+.t-blur2 {
+    position: absolute;
+    top: 12rem;
+    left: 0;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background-color: #edd0ff;
+    z-index: -9;
+    filter: blur(72px);
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    width: 30rem;
+    min-height: 12rem;
+    background: rgba(255, 255, 255, 0.26);
+    border: 7px solid var(--blueCard);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+}
+
+
+.testimonial > img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.t-text {
+    text-align: right;
+}
+
+.t-text > p {
+    color: var(--gray);
+    text-align: justify;
+}
+
+.t-text > span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.t-wrapper .swiper {
+    width: 100%;
+    height: 70%;
+}
+
+.t-wrapper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.t-wrapper .swiper-pagination-bullet-active {
+    background: var(--orange);
+}
+
+@media screen and (max-width: 480px) {
+    .t-wrapper {
+        padding: 0 20px;
+    }
+
+    .testimonial > img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .t-wrapper .swiper {
+        height: 80%;
+    }
+
+    .testimonial {
+        padding: 1rem;
+        width: 30rem;
+    }
+}
